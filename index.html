@@ -60,108 +60,108 @@
 
 			<div class="slides">
 				<section>
-					<h2>Making Maps with MapsEngine and Leaflet.js</h1>
+					<h2>Visualizing Geolocated Data with MapsEngine and Leaflet.js</h1>
 					<br /><br />
-					<p>This presentation: <a href="http://digitalutsc.github.io/making-maps-digpedutsc">http://is.gd/islandora</a></p>
+					<p>This presentation: <a href="http://digitalutsc.github.io/making-maps-digpedutsc">http://is.gd/mapmaking</a></p>
 					<br /><br />
 					<p>
-						<small>Sara Allain / <a href="http://twitter.com/archivalistic">@archivalistic</a><br />Digital Scholarship Unit, UTSC Library / <a href="http://twitter.com/digitalutsc">@digitalutsc</a></small>
+						<small>Kim Pham | <a href="http://twitter.com/tolloid">@tolloid</a><br />
+							Sara Allain | <a href="http://twitter.com/archivalistic">@archivalistic</a><br />
+							Digital Scholarship Unit, UTSC Library | <a href="http://twitter.com/digitalutsc">@digitalutsc</a></small>
 					</p>
 				</section>
 
 				<section>
 					<section>
-						<h2>What is Islandora?</h2>
+						<h2>Why Make Maps?</h2>
 						<br>
 						<ul>
-							<li>Digital asset management system</li>
-							<li>Supports large, searchable collections of all kinds</li>
-							<li>Relational database structure</li>
+							<li>Visualize complex data</li>
+							<li>Track information over distance and time</li>
+							<li>Give students a new way to engage with data and digital scholarship</li>
 						</ul>
 					</section>
 				</section>
 
 				<section>
-					<h2>Why Islandora?</h2>
+					<h2>MapsEngine</h2>
 					<br>
 					<ul>
-						<li>Free and <a href="http://opensource.org/osd">open source</a></li>
-						<li>Modular and extensible</li>
-						<li>Strong preservation function</li>
+						<li>Google product - works with any Google ID (no extra credentials required)</a></li>
+						<li>Make layers, change colours/shape of pins, add images, directions, etc.</li>
+						<li>Easy and intuitive</li>
 					</ul>
+					<br><br>
+					<h3><a href="http://mapsengine.google.com">mapsengine.google.com</a></h3>
 				</section>
 
 				<section>
-					<section>
-						<h2>Doris McCarthy, 1910-2010</h2>
-						<br>
-						<img src="img/doris-pine-lake.png"></img>
-					</section>
-					<section>
-						<ul>
-							<li>Born in Calgary, AB and grew up in the Toronto Beaches</li>
-							<li>Met Marjorie Beer, her lifelong best friend, in 1920</li>
-							<li>Graduated from the Ontario College of Art (1930)</li>
-							<li>Supported herself as a practicing artist by teaching at Toronto's Central Technical School (1932-1972)</li>
-							<li>First woman president of the Ontario Society of Artists (1964-1967)</li>
-							<li>Travelled widely for artistic inspiration, notably to the southeast coast of Quebec and the Canadian north</li>
-							<li>Graduated from University of Toronto Scarborough with a BA in English in 1989</li>
-						</ul>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h2>The Doris McCarthy fonds</h2>
-						<h4><a href="https://www.utsc.utoronto.ca/digitalscholarship/sites/default/files/2011-001_FINDING_AID_FINAL.pdf">Archival finding aid</a></h4>
-						<br>
-						<p></p>
-						<ul>
-							<li>Donated to UTSC by Doris' estate, along with 213 artworks</a></li>
-							<li>9+ meters of textual records</li>
-							<li>15,000+ photographs, negatives, and slides</li>
-						<ul>
-						<br>
-						<img src="img/coleman-village.png" width="400"></img>
-					</section>
-					<section>
-						<p>The fonds includes:</p>
-						<ul>
-							<li>Artifacts from Doris' life as an artist</li>
-							<li>Architectural drawings for her home, Fool's Paradise (now an Ontario Heritage Trust artists' retreat)</li>
-							<li>Both sides of a decades-long correspondence between Doris and Marjorie Beer (1912-1974)</li>
-							<li>Diaries written between the ages of 12 and 90</li>
-							<li>Drafts of her autobiographical publications</li>
-							<li>Donated with the intention that the material would be made available online</li>
-						</ul>
-					</section>
-				</section>
-
-				<section>
-					<h2>The digitized collection</h2>
-					<h4><a href="http://utsc.utoronto.ca/digitalscholarship/islandora">UTSC's Islandora repository</a></h4>
+					<h2>Export Data and Manipulate!</h2>
 					<br>
 					<ul>
-						<li>2000+ scanned images or photographs</li>
-						<li>Over 30 gigabytes of data</li>
-						<li>Scanned and described in-house by employees with deep subject knowledge</li>
-						<li>Further digitization planned for this summer</li>
+						<li>From MapsEngine, export data as KML</li>
+						<li>Keyhole Markup Language - for geographical data</li>
+						<li>Convert to geoJSON using ogr2ogr</li>
+						<li>Import into complex mapping software, like Leaflet.js</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Islandora Sandbox</a></h2>
-					<h4><a href="http://sandbox.islandora.ca">sandbox.islandora.ca</a></h4>
+					<h2>Leaflet.js</h2>
+					<br>
 					<ul>
-						<li>Find an image of anything online (<a href="https://www.google.ca/imghp?hl=en&tab=wi&authuser=0&ei=BkN_U8ywOsm88QGO_4DoBw&ved=0CAQQqi4oAg">Google Image Search</a>)</li>
-						<li>Log in using the given name and password</li>
-						<li>Click on "Islandora Repository" in the left Navigation menu</li>
-						</li>
-						<li>Click on "Large Image Collection"</li>
-						<li>Click on "Manage", then "Add an object to this collection"</li>
-						<li>Create metadata using the form and upload your object</li>
+						<li>Open source, maintained by community</li>
+						<li>Uses Javascript</li>
+						<li>Mobile friendly</li>
+						<li>Highly customizable: community built plugins and code your own additional features</li>
 					</ul>
+					<br><br>
+					<h3><a href="http://leafletjs.com">leafletjs.com</a></h3>
 				</section>
+
+				<section>
+					<h2>Quick Start</h2>
+					<br>
+					<ol>
+						<li>Start an html document</li>
+						<li>Link to external leaflet JS files</li>
+						<li>Add css</li>
+						<li>Adding a div container for your map</li>
+						<li>Add the javascript</li>
+					<ol>
+				</section>
+
+				<section>
+					<h2>Even Quicker Start</h2>
+					<br>
+					<h3><a href=>Download this template</a></h3>
+				</section>
+
+				<section>
+					<h2>Use Cases</h2>
+					<br>
+					<p>Kim:</p>
+					<ul>
+						<li><a href="http://data.library.utoronto.ca/datapub/misc/shsmap/shsmap7.1.html">Scarborough Historical Mapping Project</a></li>
+					</ul>
+					<br><br>
+					<p>Sara:</p>
+					<ul>
+						<li><a href="http://saraallain.com">Tweet maps</a> (archived tweets using <a href="https://github.com/edsu/twarc">TWARC</a>)</li>
+					<ul>
+				</section>
+
+				<section>
+					<h2>Questions?</h1>
+					<br /><br />
+					<p>This presentation: <a href="http://digitalutsc.github.io/making-maps-digpedutsc">http://is.gd/mapmaking</a></p>
+					<br /><br />
+					<p>
+						<small>Kim Pham | <a href="http://twitter.com/tolloid">@tolloid</a><br />
+						Sara Allain | <a href="http://twitter.com/archivalistic">@archivalistic</a><br />
+						Digital Scholarship Unit, UTSC Library | <a href="http://twitter.com/digitalutsc">@digitalutsc</a></small>
+					</p>
+					</section>
 
 			</div>
 

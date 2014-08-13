@@ -111,16 +111,16 @@ section {
   border-top-color: deeppink; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #0000f1; }
+  border-right-color: white; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #0000f1; }
+  border-left-color: white; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #0000f1; }
+  border-bottom-color: white; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #0000f1; }
+  border-top-color: white; }
 
 /*********************************************
  * PROGRESS BAR
